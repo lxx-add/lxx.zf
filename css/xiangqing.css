@@ -1,0 +1,364 @@
+html {
+  font-size: 100px;
+  background-color: #ddd;
+}
+.head {
+  font-size: 0.12rem;
+  padding: 0.05rem 0.2rem;
+  width: 100%;
+  box-sizing: border-box;
+  height: 0.42rem;
+  background: #FF8A00;
+  display: flex;
+  flex-direction: row;
+}
+.head div {
+  height: 0.32rem;
+}
+.head div img {
+  height: 0.32rem;
+}
+.head > div:nth-child(2) {
+  margin-left: 1rem;
+}
+.head > div:nth-child(3) {
+  margin-left: 0.2rem;
+}
+.first {
+  width: 100%;
+  height: 1.85rem;
+}
+.first img {
+  width: 100%;
+  height: 100%;
+}
+.second {
+  height: 1.9rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0.25rem 0.2rem;
+}
+.second .s-p1 {
+  font-size: 0.18rem;
+  font-weight: 600;
+}
+.second .s-p2 {
+  margin-top: 0.13rem;
+  font-size: 0.14rem;
+}
+.second .s-p2 span:nth-child(3) {
+  float: right;
+}
+.second .s-p2 span:nth-child(3) img {
+  height: 0.2rem;
+}
+.second .s-p3 {
+  margin-top: 0.13rem;
+  font-size: 0.12rem;
+  color: #888;
+}
+.second .s-p4 {
+  margin-top: 0.1rem;
+  font-size: 0.14rem;
+}
+.second .s-p4 span {
+  display: inline-block;
+  padding: 0.03rem 0.05rem;
+  background-color: #aaa;
+}
+.third {
+  margin-top: 0.12rem;
+  width: 100%;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  background-color: white;
+}
+.third ul {
+  font-size: 0.12rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: 4.08rem;
+  width: 100%;
+}
+.third ul li {
+  width: 50%;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  border-bottom: 0.01rem solid #ddd;
+}
+.third ul li:nth-child(11),
+.third ul li:nth-child(12),
+.third ul li:nth-child(13) {
+  width: 100%;
+}
+.third div {
+  font-size: 0.12rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  color: #888;
+}
+.fours {
+  background-color: white;
+  margin-top: 0.15rem;
+  padding: 0 0.2rem;
+}
+.fours p:nth-child(1) {
+  font-size: 0.16rem;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  width: 100%;
+  color: orange;
+  border-bottom: 0.01rem solid #ddd;
+}
+.fours p:nth-child(2) {
+  font-size: 0.12rem;
+  margin-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  line-height: 0.2rem;
+  border-bottom: 0.01rem solid #ddd;
+}
+.fours p:nth-child(3) {
+  font-size: 0.12rem;
+  color: #888;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+}
+.fif {
+  height: 3rem;
+  margin-top: 0.15rem;
+  padding: 0 0.2rem;
+  background-color: white;
+}
+.fif .f-p1 {
+  font-size: 0.16rem;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  width: 100%;
+  color: orange;
+  border-bottom: 0.01rem solid #ddd;
+}
+.fif .f-d1 {
+  font-size: 0.12rem;
+  padding: 0.22rem 0;
+  height: 0.8rem;
+  display: flex;
+  flex-direction: row;
+}
+.fif .f-d1 img {
+  height: 0.8rem;
+}
+.fif .f-d1 div:nth-child(2) {
+  margin-left: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fif .f-d1 p:nth-child(1) {
+  font-size: 0.14rem;
+}
+.fif .f-d1 p:nth-child(2) {
+  font-size: 0.12rem;
+}
+.fif .f-d1 p:nth-child(3) {
+  font-size: 0.12rem;
+}
+.fif .f-d1 p:nth-child(3) span {
+  padding: 0.05rem 0.05rem;
+  background-color: paleturquoise;
+  margin-right: 0.1rem;
+}
+.fif > div:nth-child(2) {
+  border-bottom: 0.02rem solid orange;
+}
+.six {
+  margin-top: 0.15rem;
+  height: 3.56rem;
+  font-size: 0.12rem;
+  padding: 0 0.2rem;
+  background-color: white;
+}
+.six ul li {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  border-bottom: 0.01rem solid #ddd;
+}
+.six ul li span:nth-child(1) {
+  color: #888;
+}
+.six ul li:nth-child(1) {
+  font-size: 0.16rem;
+}
+.six ul li:nth-child(7) {
+  font-size: 0.12rem;
+  text-align: center;
+}
+.seven {
+  height: 2.54rem;
+  margin-top: 0.15rem;
+  padding: 0 0.2rem;
+  background-color: white;
+}
+.seven p {
+  font-size: 0.16rem;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  width: 100%;
+  border-bottom: 0.01rem solid #ddd;
+}
+.seven div {
+  margin-top: 0.2rem;
+  height: 1.55rem;
+  width: 2.8rem;
+}
+.seven div img {
+  width: 2.8rem;
+  height: 1.55rem;
+}
+.eight {
+  margin-top: 0.15rem;
+  font-size: 0.12rem;
+  background-color: white;
+}
+.eight .e-p {
+  font-size: 0.16rem;
+  padding-left: 0.2rem;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  width: 100%;
+  border-bottom: 0.01rem solid #ddd;
+}
+.eight ul {
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  font-size: 0.12rem;
+}
+.eight ul li {
+  position: relative;
+  height: 1.6rem;
+  display: flex;
+  padding-top: 0.2rem;
+  border-bottom: 0.01rem solid #ddd;
+}
+.eight ul li .fif-1 {
+  display: flex;
+  height: 1rem;
+  font-size: 0.12rem;
+  align-items: center;
+}
+.eight ul li .fif-1 img {
+  width: 0.8rem;
+}
+.eight ul li .fif-2 {
+  margin-left: 0.15rem;
+  height: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.eight ul li .fif-2 .f-p1 {
+  width: 1.85rem;
+  font-size: 0.18rem;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.eight ul li .fif-2 .f-p2 {
+  width: 1.85rem;
+}
+.eight ul li .fif-2 .f-p2 .f-sp1 {
+  float: right;
+  color: #FF8A00;
+}
+.eight ul li .fif-2 .f-p3 {
+  color: #555;
+}
+.eight ul li .fif-2 .f-p3 .f-sp2 {
+  float: right;
+}
+.eight ul li .fif-2 .f-p4 {
+  color: #003300;
+}
+.eight ul li .fif-2 .f-p4 span {
+  background-color: #F4F7F9;
+  padding: 0.02rem;
+}
+.eight ul li .e-d1 {
+  position: absolute;
+  top: 1.1rem;
+  left: 0.1rem;
+  width: 0.16rem;
+  box-sizing: border-box;
+  border: 0.08rem solid white;
+  border-bottom: 0.08rem solid #ddd;
+}
+.eight ul li .e-d2 {
+  position: absolute;
+  top: 1.26rem;
+  background-color: #ddd;
+  height: 0.3rem;
+  width: 2.8rem;
+  padding-left: 0.2rem;
+  line-height: 0.3rem;
+}
+.nine {
+  margin-top: 0.02rem;
+  background-color: white;
+  font-size: 0.14rem;
+  color: #888;
+  line-height: 0.5rem;
+  text-align: center;
+}
+.foot {
+  position: fixed;
+  bottom: 0;
+  height: 1.5rem;
+  width: 100%;
+  background-color: #2f3130;
+  font-size: 0.12rem;
+  color: #888;
+  padding: 0 0.15rem;
+  box-sizing: border-box;
+}
+.foot .f-p {
+  font-size: 0.14rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-bottom: 0.01rem solid #888;
+}
+.foot .foot-d1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 0.66rem;
+  margin: 0 0.5rem;
+}
+.foot .foot-d1 .f-d11 {
+  display: flex;
+  align-items: center;
+}
+.foot .foot-d1 .f-d11 img {
+  height: 0.24rem;
+}
+.foot .f-f {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.f-d11 > div:nth-child(2) {
+  margin-left: 0.05rem;
+}
+.f-f > p:nth-child(1) {
+  font-size: 0.14rem;
+}
+.f-f > p:nth-child(2) {
+  font-size: 0.1rem;
+}
+.kong {
+  height: 1.5rem;
+  width: 100%;
+}

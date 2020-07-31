@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .wrap {
+            width: 100%;
+            height: 100%;
+            font-size: 10px;
+            position: relative;
+
+        }
+
+        .top1 {
+            width: 100%;
+            height: 50px;
+            background-color: #FF8A00;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .top1 img {
+            height: 35px;
+            margin: 10px 20px;
+
+        }
+
+        .top {
+            width: 100%;
+            height: 5rem;
+            background-color: #ddd;
+            /* padding: 1rem ;  */
+            position: relative;
+
+
+        }
+
+        .top-input {
+            width: 16rem;
+
+            border: 1px solid black;
+            font-size: 1.1rem;
+            background-color: #fff;
+            color: #ddd;
+            padding: 0.7rem;
+            position: absolute;
+            left: 3rem;
+            top: 1rem;
+            position: relative;
+
+
+
+        }
+
+
+        .top span {
+            position: absolute;
+            top: 0.2rem;
+            right: 1.3rem;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .top-hed {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .top-hed li {
+            width: 25%;
+            border-left: 0.1rem solid #eee;
+            font-size: 1.4rem;
+            text-align: center;
+            margin-top: 1rem;
+
+        }
+
+        .hed01 {
+            width: 100%;
+            display: flex;
+
+        }
+
+        .hed01-le {
+            width: 30%;
+            padding: 20px;
+        }
+
+        .hed01-le img {
+            width: 140px;
+
+        }
+
+        .hed01-r {
+            width: 55%;
+
+            padding: 20px 10px;
+        }
+
+        .hed01-bigt {
+            font-size: 20px;
+
+            font-weight: bolder;
+            text-decoration: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .hed01-r-1 {
+            overflow: hidden;
+            font-weight: bolder;
+
+        }
+
+        .hed001 {
+            width: 100%;
+        }
+
+        .hed01-r-1-l {
+            float: left;
+
+        }
+
+        .hed01-r-1-r {
+            float: right;
+            margin-right: 15px;
+
+            color: #FF8A00;
+        }
+
+        .a1 {
+            color: #ddd;
+        }
+
+        .a2 {
+
+            color: #ddd;
+        }
+
+        .hed01-r-xue {
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        .bot {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background-color: #2F3130;
+
+
+        }
+
+        .bot-top {
+            width: 100%;
+            font-size: 1.2rem;
+            color: #fff;
+
+            padding: 20px;
+            border-bottom: 1px solid#fff;
+
+        }
+
+        .bot-a {
+            display: flex;
+
+        }
+
+        .bot-f {
+            display: flex;
+            justify-content: space-around;
+            padding-right: 40px;
+        }
+
+        .top-img-t {
+            padding: 20px;
+            font-size: 14px;
+            color: #fff;
+
+        }
+
+        .bot-img1 img {
+            width: 25px;
+        }
+
+        .bot-img1 {
+            padding: 20px;
+        }
+
+        .bot-btr {
+            text-align: center;
+            padding: 30px 10px 0 0;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .pp {
+            width: 100%;
+            height: 195px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .quyu {
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            left: 0px;
+            top: 182px;
+            text-align: center;
+            background-color: #fff;
+            color: #ddd;
+            display: none;
+            border-bottom: 1px solid black;
+
+
+
+        }
+
+        .quyu-left {
+            width: 20%;
+            border-bottom: 1px solid black;
+            float: left;
+        }
+
+        .quyu-a {
+            width: 30%;
+            font-size: 16px;
+            text-align: center;
+            border-left: 1px solid black;
+            float: left;
+
+        }
+
+        .quyu-a li {
+            width: 100px;
+            margin: 20px;
+        }
+
+        .quyu-b {
+            width: 30%;
+            font-size: 16px;
+            text-align: center;
+            float: left;
+            /* margin-left: 20px; */
+        }
+
+        .quyu-b li {
+            width: 60px;
+            margin: 20px;
+        }
+
+        .quyu-left-1 {
+            color: orange;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="top1">
+            <div class="tp1-l">
+                <img src="./img1/index/logo.jpg" alt="">
+            </div>
+            <div class="top1-r">
+                <span><img src="./img1/index/my.jpg" alt=""></span>
+                <span><img src="./img1/index/xiazai.jpg" alt=""></span>
+            </div>
+        </div>
+        <div class="top">
+            <div class="top-input">
+                请输入小区或商圈名称
+                <span>
+                    <img src="./img1/SecondHandList/search_03.png" alt="">
+                </span>
+            </div>
+
+        </div>
+        <ul class="top-hed">
+            <li class="top-hed-a">区域
+            </li>
+            <li>房型</li>
+            <li>价格</li>
+            <li>更高</li>
+        </ul>
+
+        <div class="hed01">
+            <div class="hed01-le">
+                <img src="./img1/index/img2.png" alt="">
+            </div>
+            <div class="hed01-r">
+                <p class="hed01-bigt">文化部中间层 一层带阁楼</p>
+                <div class="hed01-r-1">
+                    <div class="hed01-r-1-l">
+                        2室1厅96㎡南北
+                    </div>
+                    <div class="hed01-r-1-r"> 1105万</div>
+                </div>
+                <div class="hed01-r-1">
+                    <div class="hed01-r-1-l a1">红庙北里</div>
+                    <div class="hed01-r-1-r a2">14268元/平</div>
+                </div>
+                <span class="hed01-r-xue">学区房 独家</span>
+            </div>
+        </div>
+        <div class="hed01">
+            <div class="hed01-le">
+                <img src="./img1/index/img2.png" alt="">
+            </div>
+            <div class="hed01-r">
+                <p class="hed01-bigt">文化部中间层 一层带阁楼</p>
+                <div class="hed01-r-1">
+                    <div class="hed01-r-1-l">
+                        2室1厅96㎡南北
+                    </div>
+                    <div class="hed01-r-1-r"> 1105万</div>
+                </div>
+                <div class="hed01-r-1">
+                    <div class="hed01-r-1-l a1">红庙北里</div>
+                    <div class="hed01-r-1-r a2">14268元/平</div>
+                </div>
+                <span class="hed01-r-xue">学区房 独家</span>
+            </div>
+
+
+
+        </div>
+
+        <div class="hed01">
+            <div class="hed01-le">
+                <img src="./img1/index/img2.png" alt="">
+            </div>
+            <div class="hed01-r">
+                <p class="hed01-bigt">文化部中间层 一层带阁楼</p>
+                <div class="hed01-r-1">
+                    <div class="hed01-r-1-l">
+                        2室1厅96㎡南北
+                    </div>
+                    <div class="hed01-r-1-r"> 1105万</div>
+                </div>
+                <div class="hed01-r-1">
+                    <div class="hed01-r-1-l a1">红庙北里</div>
+                    <div class="hed01-r-1-r a2">14268元/平</div>
+                </div>
+                <span class="hed01-r-xue">学区房 独家</span>
+            </div>
+
+
+
+        </div>
+        <div class="bot">
+            <div class="bot-top">
+                北京找房无忧>首页
+            </div>
+            <div class="bot-f">
+                <div class="bot-a">
+                    <div class="bot-img1">
+                        <img src="./img1/index/apple.png" alt="">
+                    </div>
+                    <div class="top-img-t">
+                        <p>
+                            iphone
+                        </p>
+                        <p>
+                            客户端
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-a">
+                    <div class="bot-img1">
+                        <img src="./img1/index/android.png" alt="">
+                    </div>
+
+                    <div class="top-img-t">
+                        <p>
+                            android
+                        </p>
+                        <p>
+                            客户端
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="bot-btr">
+                北京找房无忧经济公司
+            </div>
+        </div>
+
+        <div class="quyu">
+            <div class="quyu-left">
+                <h1 class="quyu-left-1">区域</h3>
+                    <h1>地铁</h3>
+            </div>
+            <div>
+                <ul class="quyu-a">
+                    <li>附近</li>
+                    <li>附近</li>
+                    <li>附近</li>
+                    <li>附近</li>
+                    <li>附近</li>
+                    <li>附近</li>
+                    <li>附近</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="quyu-b">
+                    <li>不限</li>
+                    <li>不限</li>
+                    <li>不限</li>
+                    <li>不限</li>
+                    <li>不限</li>
+                    <li>不限</li>
+                    <li>不限</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="pp">
+
+        </div>
+
+    </div>
+    <script>
+        var quyu = document.getElementsByClassName('top-hed-a')[0];
+        var qy = document.getElementsByClassName('quyu')[0];
+        var count = 0
+
+        quyu.onclick = function () {
+            if (count == 0) {
+                qy.style.display = 'block';
+                count = 1;
+
+            } else {
+                qy.style.display = 'none';
+                count = 0;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
